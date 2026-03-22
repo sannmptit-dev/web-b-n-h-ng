@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* 1. Khung cửa sổ nhìn ra ngoài (Giấu phần bị thừa) */
+        .khung_nhin {
+            width: 330px; 
+            overflow: hidden; /* Quan trọng nhất: Cắt đi phần bị trôi ra ngoài */
+            border: 3px solid red; /* Viền đỏ để bạn dễ hình dung cái khung */
+        }
+
+        /* 2. Băng chuyền dài chứa các hộp */
+        .bang_chuyen {
+            display: flex;
+            gap: 10px; /* Khoảng cách giữa các hộp */
+            width: max-content; /* Tự động dài ra theo số lượng hộp bên trong */
+            
+            /* Lệnh chạy: Tên hiệu ứng | Thời gian 5s | Chạy đều | Lặp vô tận */
+            animation: chay_ngang 15s linear infinite; 
+        }
+
+        /* 3. Trang trí hộp cho dễ nhìn */
+        .hop {
+            width: 100px;
+            height: 100px;
+            background-color: lightblue;
+            text-align: center;
+            line-height: 100px; /* Căn giữa chữ */
+        }
+
+        /* 4. Định nghĩa hiệu ứng trôi */
+        @keyframes chay_ngang {
+            0% { transform: translateX(0); } /* Bắt đầu ở vị trí 0 */
+            100% { transform: translateX(-50%); } /* Trôi đúng một nửa chiều dài băng chuyền */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="khung_nhin">
+        <div class="bang_chuyen">
+            <div class="hop">Hộp 1</div>
+            <div class="hop">Hộp 2</div>
+            <div class="hop">Hộp 3</div>
+
+            <div class="hop">Hộp 1</div>
+            <div class="hop">Hộp 2</div>
+            <div class="hop">Hộp 3</div>
+        </div>
+    </div>
+
+</body>
+</html>
