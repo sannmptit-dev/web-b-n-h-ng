@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ogani Blog - Layout Demo</title>
+    <link rel="stylesheet" href="san.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+  
+    </style>
+</head>
+<body>
+    <header class ="header-hai">
+        <div class ="o1-hai"><a href = "hai.html"><img src = "https://preview.colorlib.com/theme/ogani/img/logo.png" alt="Logo"></a></div>
+        <div class ="o2-hai">
+            <nav class = "menu-hai">
+                <ul>
+                    <li><a href ="hai.html">HOME</a></li>
+                    <li><a href ="dang.html">SHOP DETAILS</a></li>
+                    <li><a href ="v.html">BLOG</a></li>
+                    <li><a href ="a.html">CART</a></li>
+                </ul>
+            </nav>
+            <div class ="cart-hai"> 
+                <div class ="icon-hai">
+                    <a href ="#"><div class="icon1-hai"><i class="fa fa-heart"></i><span>0</span></div></a>
+                    <a href ="#"><div class="icon2-hai"><i class="fa fa-shopping-bag"></i><span>0</span></div></a>
+                </div>
+                <div class="cart-price-hai">item: <span><b>$0.00</b></span></div>
+            </div>
+        </div>
+    </header>
+    
+    <section class="phan-khung-nen">
+        <div class="container">
+            <div class="khung-nen-text">
+                <h2>Blog</h2>
+                <span>Home <i class="fa-solid fa-minus"></i> Blog</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="phan-blog">
+        <div class="container">
+            <div class="blog-cuc-o-giua">
+                
+                <div class="sidebar">
+                    <div class="sidebar-tim-kiem">
+                        <form action="#" onsubmit="event.preventDefault();">
+                            <input type="text" id="search-input-hai" placeholder="Search..." autocomplete="off">
+                            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                            <div class="search-dropdown-hai" id="search-dropdown-hai"></div>
+                        </form>
+                    </div>
+
+                    <div class="sidebar-danh-muc">
+                        <h4 class="sidebar-tieu-de">Categories</h4>
+                        <ul id="category-list-hai">
+                            <li><a href="#" data-cat="all">Tất cả bài viết</a></li>
+                            <li><a href="#" data-cat="suc-khoe">Sức khỏe (20)</a></li>
+                            <li><a href="#" data-cat="dinh-duong">Dinh dưỡng & Thực đơn (5)</a></li>
+                            <li><a href="#" data-cat="loi-song">Lối sống Lành mạnh (9)</a></li>
+                            <li><a href="#" data-cat="kham-pha">Khám phá & Trải nghiệm (10)</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="sidebar-recent-news">
+                        <h4 class="sidebar-tieu-de">Recent News</h4>
+                        <a href="https://hewel.com.vn/tin-tuc/rau-giai-doc-gan.html" target="_blank" class="recent-news-item">
+                            <div class="recent-news-pic">
+                                <img src="https://preview.colorlib.com/theme/ogani/img/blog/sidebar/sr-1.jpg" alt="News 1">
+                            </div>
+                            <div class="recent-news-text">
+                                <h6> 9 loại rau củ bảo vệ gan</h6>
+                                <span>MAR 05, 2019</span>
+                            </div>
+                        </a>
+
+                        <a href="https://www.vinmec.com/vie/bai-viet/10-loi-khuyen-dinh-duong-hop-ly-vi" target="_blank" class="recent-news-item">
+                            <div class="recent-news-pic">
+                                <img src="https://preview.colorlib.com/theme/ogani/img/blog/sidebar/sr-2.jpg" alt="News 2">
+                            </div>
+                            <div class="recent-news-text">
+                                <h6>10 lời khuyên dinh dưỡng hợp lý</h6>
+                                <span>MAR 05, 2019</span>
+                            </div>
+                        </a>
+
+                        <a href="#https://thethaokimthanh.vn/suc-khoe-dinh-duong/nhung-nguyen-tac-khi-giam-can-bang-rau-cu-qua-d9007.htm" target="_blank" class="recent-news-item">
+                            <div class="recent-news-pic">
+                                <img src="https://preview.colorlib.com/theme/ogani/img/blog/sidebar/sr-3.jpg" alt="News 3">
+                            </div>
+                            <div class="recent-news-text">
+                                <h6>Những nguyên tắc khi giảm cân bằng rau củ quả</h6>
+                                <span>MAR 05, 2019</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="sidebar-tags">
+                        <h4 class="sidebar-tieu-de">Search By</h4>
+                        <div class="tags-list" id="tags-container-hai">
+                            <a href="#">Apple</a>
+                            <a href="#">Beauty</a>
+                            <a href="#">Vegetables</a>
+                            <a href="#">Fruit</a>
+                            <a href="#">Healthy Food</a>
+                            <a href="#">Lifestyle</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="blog-content">
+                    <div class="blog-list-new" id="blog-list-container-hai">
+                        
+                        <div class="blog-item-new" data-id="p1" data-category="kham-pha" data-tags="Vegetables, Healthy Food, Lifestyle">
+                            <div class="blog-item-new__pic">
+                                <img src="https://channel.mediacdn.vn/2019/6/19/photo-1-15609273793071452348158.jpg" alt="Peas">
+                            </div>
+                            <div class="blog-item-new__text">
+                                <ul class="blog-item-ngay-dang">
+                                    <li><i class="fa-regular fa-calendar"></i> JUNE 19, 2019</li>
+                                    <li><i class="fa-regular fa-comment"></i> 99</li>
+                                </ul>
+                                <h5><a href="https://kenh14.vn/vong-quanh-the-gioi-ghe-tham-nhung-trang-trai-organic-sieu-xinh-20190619135942686.chn" target="_blank">Vòng quanh thế giới: Ghé thăm những trang trại Organic siêu xinh</a></h5>
+                                <p>Người ta yêu thích những trang trại Organic không chỉ vì nó đem đến nguồn thực phẩm tươi sạch, thuần khiết mà còn bởi khi bước chân vào nơi đó, ta luôn cảm thấy tâm hồn thư thái, bình yên trước khung cảnh rất đỗi nên thơ trong trẻo.</p>
+                                <a href="https://kenh14.vn/vong-quanh-the-gioi-ghe-tham-nhung-trang-trai-organic-sieu-xinh-20190619135942686.chn" target="_blank" class="blog-item-new-read-more">READ MORE <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="blog-item-new" data-id="p2" data-category="loi-song" data-tags="Lifestyle, Beauty">
+                            <div class="blog-item-new__pic">
+                                <img src="https://i1-giadinh.vnecdn.net/2019/07/23/629087757-w500-8629-1563852495.png?w=0&h=0&q=100&dpr=2&fit=crop&s=7g6rC2lveNh5LzZbCZPLmA" alt="Citrus Fruits">
+                            </div>
+                            <div class="blog-item-new__text">
+                                <ul class="blog-item-ngay-dang">
+                                    <li><i class="fa-regular fa-calendar"></i> JULY 23, 2019</li>
+                                    <li><i class="fa-regular fa-comment"></i> 32</li>
+                                </ul>
+                                <h5><a href="https://vnexpress.net/nhieu-nguoi-chuong-loi-song-organic-3956554.html" target="_blank">Nhiều người chuộng lối sống organic</a></h5>
+                                <p>Phong cách sống cân bằng, giúp khỏe mạnh về thể chất lẫn tinh thần như thực dưỡng, ăn uống sạch, yoga hay thiền định... được nhiều người quan tâm.</p>
+                                <a href="https://vnexpress.net/nhieu-nguoi-chuong-loi-song-organic-3956554.html" target="_blank" class="blog-item-new-read-more">READ MORE <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="blog-item-new" data-id="p3" data-category="suc-khoe" data-tags="Healthy Food, Apple">
+                            <div class="blog-item-new__pic">
+                                <img src="https://i1-suckhoe.vnecdn.net/2022/06/02/huu-co-2605-1654162221.jpg?w=0&h=0&q=100&dpr=2&fit=crop&s=l2II19xEi4xpDpNKfzgHQw" alt="Drink">
+                            </div>
+                            <div class="blog-item-new__text">
+                                <ul class="blog-item-ngay-dang">
+                                    <li><i class="fa-regular fa-calendar"></i> JUNE 4, 2022</li>
+                                    <li><i class="fa-regular fa-comment"></i> 2</li>
+                                </ul>
+                                <h5><a href="https://vnexpress.net/thuc-pham-huu-co-co-giup-ngan-ngua-ung-thu-4471251.html" target="_blank">Thực phẩm hữu cơ có giúp ngăn ngừa ung thư</a></h5>
+                                <p>Ăn nhiều thực phẩm hữu cơ có thể giúp giảm nguy cơ mắc ung thư theo một nghiên cứu của Pháp.</p>
+                                <a href="https://vnexpress.net/thuc-pham-huu-co-co-giup-ngan-ngua-ung-thu-4471251.html" target="_blank" class="blog-item-new-read-more">READ MORE <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="blog-item-new" data-id="p4" data-category="dinh-duong" data-tags="Vegetables, Fruit, Healthy Food">
+                            <div class="blog-item-new__pic">
+                                <img src="https://cdn.hstatic.net/200001060923/file/hinh_web_ha_long_233c3c4848a04114ac97f6dff1810f82_grande.png" alt="Vegetables">
+                            </div>
+                            <div class="blog-item-new__text">
+                                <ul class="blog-item-ngay-dang">
+                                    <li><i class="fa-regular fa-calendar"></i> OCTOBER 9, 2025</li>
+                                    <li><i class="fa-regular fa-comment"></i> 52</li>
+                                </ul>
+                                <h5><a href="https://www.organicahalong.vn/blogs/song-huu-co/14-thuc-don-huu-co-organic-don-gian-cho-hoi-doc-than-tu-cham-lay-m" target="_blank">14+ Thực đơn hữu cơ (Organic) Đơn giản cho hội độc thân "tự chăm lấy mình"</a></h5>
+                                <p>Bữa cơm hàng ngày cho hội độc thân không cần quá cầu kỳ, thế nhưng dinh dưỡng là yếu tố tất yếu phải được đảm bảo. Dù có một mình, đừng để cuộc sống trở nên xuề xòa. Hãy lên sẵn menu cho cả tuần để chăm sóc tốt cho sức khỏe của bản thân bằng những lựa chọn hữu cơ, an toàn nhé!</p>
+                                <a href="https://www.organicahalong.vn/blogs/song-huu-co/14-thuc-don-huu-co-organic-don-gian-cho-hoi-doc-than-tu-cham-lay-m" target="_blank" class="blog-item-new-read-more">READ MORE <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="blog-item-new" data-id="p5" data-category="suc-khoe" data-tags="Vegetables, Healthy Food">
+                            <div class="blog-item-new__pic">
+                                <img src="https://preview.colorlib.com/theme/ogani/img/blog/blog-1.jpg" alt="Sinh tố xanh">
+                            </div>
+                            <div class="blog-item-new__text">
+                                <ul class="blog-item-ngay-dang">
+                                    <li><i class="fa-regular fa-calendar"></i> NOVEMBER 12, 2025</li>
+                                    <li><i class="fa-regular fa-comment"></i> 18</li>
+                                </ul>
+                                <h5><a href="#">Sinh tố xanh - Xu hướng giải độc cơ thể tự nhiên</a></h5>
+                                <p>Khám phá công thức sinh tố xanh từ rau cải xoăn, táo và dưa leo giúp tăng cường hệ miễn dịch và làm sạch làn da tự nhiên từ bên trong.</p>
+                                <a href="#" class="blog-item-new-read-more">READ MORE <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="blog-item-new" data-id="p6" data-category="dinh-duong" data-tags="Fruit, Apple">
+                            <div class="blog-item-new__pic">
+                                <img src="https://preview.colorlib.com/theme/ogani/img/blog/blog-2.jpg" alt="Quả mọng">
+                            </div>
+                            <div class="blog-item-new__text">
+                                <ul class="blog-item-ngay-dang">
+                                    <li><i class="fa-regular fa-calendar"></i> DECEMBER 05, 2025</li>
+                                    <li><i class="fa-regular fa-comment"></i> 45</li>
+                                </ul>
+                                <h5><a href="#">Top 5 loại quả mọng giàu chất chống oxy hóa nhất</a></h5>
+                                <p>Bổ sung các loại quả như việt quất, dâu tây vào thực đơn hàng ngày để bảo vệ tế bào tốt hơn và làm chậm lão hóa vô cùng hiệu quả.</p>
+                                <a href="#" class="blog-item-new-read-more">READ MORE <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="pagination-container-hai">
+                        <button class="btn-pagination-hai" id="btn-prev-hai"><i class="fa-solid fa-arrow-left"></i> Quay lại</button>
+                        <button class="btn-pagination-hai" id="btn-next-hai">Hiện thêm <i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <a href="#" class="footer-logo"><img src="https://preview.colorlib.com/theme/ogani/img/logo.png" alt="Ogani Logo"></a>
+                    <ul>
+                        <li>Address: 1 Phan Đình Phùng Hà Nội</li>
+                        <li>Phone: 0918351408</li>
+                        <li>Email:sannm.ptit@gmail.com</li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h6>Liên kết hữu ích</h6>
+                    <div class="footer-links-group">
+                        <ul>
+                            <li><a href="#">Về chúng tôi</a></li>
+                            <li><a href="#">Về cửa hàng của chúng tôi</a></li>
+                            <li><a href="#">Mua sắm an toàn</a></li>
+                            <li><a href="#">Thông tin giao hàng</a></li>
+                            <li><a href="#">Chính sách bảo mật</a></li>
+                            <li><a href="#">Sơ đồ trang web của chúng tôi</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">Bạn là ai</a></li>
+                            <li><a href="#">Dịch vụ của chúng tôi</a></li>
+                            <li><a href="#">Projects</a></li>
+                            <li><a href="#">Liên hệ</a></li>
+                            <li><a href="#">Sự đổi mới</a></li>
+                            <li><a href="#">Lời chứng thực</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer-newsletter">
+                    <h6>Tham gia bản tin của chúng tôi ngay bây giờ</h6>
+                    <p>Nhận thông tin cập nhật qua E-mail về cửa hàng mới nhất của chúng tôi và các ưu đãi đặc biệt.</p>
+                    <form action="#" class="newsletter-form">
+                        <input type="text" placeholder="Enter your mail">
+                        <button type="submit">SUBSCRIBE</button>
+                    </form>
+                    <div class="footer-social">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="san.js"></script>
+</body>
+</html>
